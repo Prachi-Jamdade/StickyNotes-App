@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_shade1"
+    tools:context=".NotesTakingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/TBNotes"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/IVSave"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true"
+                android:padding="12dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_save"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETTitle"
+        android:hint="Title"
+        android:fontFamily="@font/rubikregular"
+        android:textSize="@dimen/title_size1"
+        android:background="@drawable/border_searchview"
+        android:textColorHint="@color/grey"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETNotes"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/rubikregular"
+        android:background="@drawable/border_searchview"
+        android:textColor="@color/white"
+        android:hint="Add Notes"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/title_size1"/>
+
+</LinearLayout>
